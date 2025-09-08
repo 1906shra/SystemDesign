@@ -122,3 +122,5 @@ int main(){
     nosqlStorage.save(cart);
     return 0;
 }
+
+//here due to polymorphism and inheritance we can add new types of persistance without modifying the existing code. and when we need to add a new type of persistance we just need to create a new class that inherits from the Persistance class and implements the save method. thus the existing code is closed for modification but open for extension.
