@@ -16,7 +16,7 @@ class Singleton {
             return instance;
         }
 };
-Singleton* Singleton::instance = nullptr;
+Singleton* Singleton::instance = new Singleton();
 int main() {
     Singleton* s1 = Singleton::getInstance();
     Singleton* s2 = Singleton::getInstance();
